@@ -73,7 +73,7 @@ function draw() {
 
 
 function submitAnnotation() {
-    const annotation = annotationTextArea.value;
+    const annotation = document.getElementById("annotation").value;
     const user = document.getElementById("user").value;
     const boundingBox = { x: startX, y: startY, width: endX - startX, height: endY - startY };
     const data = { user , annotation, boundingBox };
